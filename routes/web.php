@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'PaymentController@create')->name('payment.create');
+Route::post('payment/create', 'PaymentController@lipaNaMpesa')->name('payment.store');
+
+

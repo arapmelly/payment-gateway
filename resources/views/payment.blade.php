@@ -420,21 +420,21 @@
                         <div class="mb-3 mx-5">
                             <label for="exampleInputEmail1" class="form-label">Payment Number</label>
                             <input type="text" class="form-control" id="paymentNumber" aria-describedby="emailHelp"
-                                name="payment_number">
+                                name="payment_number" placeholder="254710123456">
                             <div id="emailHelp" class="form-text">mpesa payment number.</div>
                         </div>
 
                         <div class="mb-3 mx-5">
                             <label for="exampleInputEmail1" class="form-label">Payment Amount</label>
                             <input type="number" class="form-control" id="paymentAmount" aria-describedby="emailHelp"
-                                name="payment_amount">
+                                name="payment_amount" placeholder="100">
                             <div id="emailHelp" class="form-text">payment amount.</div>
                         </div>
 
                         <div class="mb-3 mx-5">
                             <label for="exampleInputEmail1" class="form-label">Payment Description</label>
                             <textarea class="form-control" id="paymentDescription" aria-describedby="emailHelp"
-                                name="payment_description"></textarea>
+                                name="payment_description" placeholder="a short description"></textarea>
                             <div id="emailHelp" class="form-text">payment description.</div>
                         </div>
 

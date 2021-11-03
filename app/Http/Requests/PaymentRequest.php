@@ -17,8 +17,9 @@ class PaymentRequest extends FormRequest
     {
         return [
             //
-            'payment_number' => 'required',
-            'payment_amount' => 'required',
+            'payment_number' => 'required|min:12|numeric',
+            'payment_amount' => 'required|integer|min:10|max:700',
+            'payment_description'=>'required',
         ];
 
     }
@@ -33,6 +34,7 @@ class PaymentRequest extends FormRequest
         return [
             'payment_number.required' => 'Payment number is required',
             'payment_amount.required' => 'Payment amount is required',
+            'payment_description.required'=>'payment description is required'
         ];
     }
 

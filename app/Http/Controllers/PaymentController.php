@@ -34,6 +34,7 @@ class PaymentController extends Controller
      */
     public function lipaNaMpesa(PaymentRequest $request){
 
+
         $phoneNumber = $request->payment_number;
         $amount = $request->payment_amount;
         $accountRef = $this->account_ref;
